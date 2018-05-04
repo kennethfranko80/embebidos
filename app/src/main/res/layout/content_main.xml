@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.np_03.pajarito.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/pp1_round" />
+
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student1"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/pp2_round" />
+
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student2"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/pp3_round" />
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student3"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/pp1_round"
+
+                            />
+
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student1"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/checked_round" />
+
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student2"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/pp3_round" />
+                        <TextView
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/student3"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:text="Hoy"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/pp3_round" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:fontFamily="sans-serif"
+                        android:text="De: Tutores de Hiroshi Tanaka"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:typeface="normal"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:text="Mensaje"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Profesora, Hiroshi lleva $50 para el recreo."/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/directora_round" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:baselineAligned="false"
+                            android:fontFamily="sans-serif"
+                            android:text="De: Directora Silvia Villareal"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:typeface="normal"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:text="Mensaje"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Hoy reunión en sala de maestros!"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>
